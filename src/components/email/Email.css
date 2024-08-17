@@ -1,0 +1,85 @@
+.email-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom,  rgb(172, 172, 170), rgb(249, 249, 247));
+}
+
+.card-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+    background-color: rgb(213, 213, 202);
+    
+    background: linear-gradient(to bottom, rgb(192, 192, 190), rgb(215, 215, 211)); 
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.email-header{
+    font-size: 3vw;
+    align-self: center;
+}
+
+.btn-email{
+    width: 10%;
+    min-width: 75px;
+    height: auto;
+    min-height: 35px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    border: none ;
+}
+.btn-email:hover{
+    background-color: red;
+}
+.btn-email:active{
+    background-color: rgb(237, 107, 107);
+}
+
+.email-input{
+    border: none;
+    width: clamp(150px,30%,50%);
+    height: auto;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    min-height: 35px;
+
+}
+.email-input:focus{
+    border-color: red;
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+    .email-header{
+        font-size: 10vw;
+    }
+    .input{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .email-input{
+        width: 70vw;
+        
+    }
+
+
+}
